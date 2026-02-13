@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car web GTAVI demo</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-img-container">
+            <img src="./assets/gta_bg.png" alt="" />
+
+            <div class="hero-img-logo">
+                <img src="./assets/vice.png" alt="" />
+            </div>
+
+            <img src="./assets/hero.png" alt="" />
+
+            <div class="hero-img-copy">
+                <p>Scroll down to reveal</p>
+            </div>
+        </div>
+
+        <div class="fade-overlay"></div>
+
+        <div class="overlay">
+            <svg width="100%" height="100%">
+                <defs>
+                    <mask id="logoRevealMask">
+                        <rect width="100%" height="100%" fill="white" />
+                        <path id="logoMask"></path>
+                    </mask>
+                </defs>
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill="#111117"
+                  mask="url(#logoRevealMask)"
+                />
+            </svg>
+        </div>
+
+        <div class="logo-container"></div>
+
+        <div class="overlay-copy">
+            <h1>
+                Animation<br />
+                Experiment 452<br />
+                By MDC
+            </h1>
+        </div>
+    </section>
+    <section class="outro">
+        <p>Car are not just a machine,But also alive</p>
+    </section>
+    <script src="./gsap.min.js"></script>
+    <script src="./ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+    <script type="module" src="./logo.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
